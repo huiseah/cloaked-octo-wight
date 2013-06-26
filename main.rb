@@ -1,11 +1,12 @@
 require 'pry'
-require 'yahoofinance'
+require 'json'
+require 'httparty'
 require 'sinatra'
 require 'sinatra/reloader' if development?
 
 get '/d' do
   @message = 'APPL is quoted at $457' #generate this using yahoofinance
-  erb :quote
+  erb :results
 end
 
 get '/' do
@@ -16,7 +17,7 @@ get '/' do
     @abbrev = @abbrev.upcase
     @quote = YahooFinance::get_quotes(YahooFinance::StandardQuote, @abbrev)[@abbrev].lastTrade
   end
-  erb :quote
+  erb :results
 end
 
 
