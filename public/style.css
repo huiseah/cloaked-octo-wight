@@ -1,10 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
-body {
-  color: ;
-  background:url(/water.jpeg);
-  margin: 30px;
+body{
+background-color: black;
+color: white;
+font-family: 'Raleway', sans-serif;
+font-size: 400%
 }
+
 
 p {
   padding: 25px;
