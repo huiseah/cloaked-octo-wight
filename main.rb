@@ -10,9 +10,21 @@ end
 post '/results' do
 @moviename = params[:moviename]
 @filminfo = JSON(HTTParty.get("http://www.omdbapi.com/?i=&t=#{@moviename}"))
+
+@title= (@filminfo['Title'])
+@actors = (@filminfo['Actors'])
 @year = (@filminfo['Year'])
+@poster = (@filminfo['Poster'])
 erb	:results
 end
+
+
+
+
+
+
+
+
 
 
 

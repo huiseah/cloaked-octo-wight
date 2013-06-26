@@ -1,10 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body{
-background-color: black;
+background-color: #1BFF75;
 color: white;
 font-family: 'Raleway', sans-serif;
-font-size: 400%
+font-size: 100%
 }
 
 
@@ -16,7 +16,7 @@ p {
   box-shadow: 10px 10px 10px black;
 }
 
-p, form {
+/*p, form {
   padding: 25px;
   width: 50%;
   background-color: white;
@@ -47,4 +47,4 @@ h1 {
   text-align: center;
   font-size:;
   text-shadow: 1px 1px 1px #2F2F2F;
-}
+}*/
