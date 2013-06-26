@@ -1,12 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body{
-background-color: #1BFF75;
-color: white;
+background-color: black;
+color: #1BFF75;
 font-family: 'Raleway', sans-serif;
 font-size: 100%
 }
 
+p1{ text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 300%;
+}
 
 p {
   padding: 25px;
@@ -15,6 +19,17 @@ p {
   margin: 1em auto;
   box-shadow: 10px 10px 10px black;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*p, form {
   padding: 25px;
