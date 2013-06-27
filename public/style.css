@@ -20,9 +20,30 @@ p {
   box-shadow: 10px 10px 10px black;
 }
 
+h1 {
+  color: #E7E7E7;
+  background-color: #0087C2;
+  border-radius: 12px;
+  padding: 25px;
+  width: 50%;
+}
 
+p#q1, #q2, #q3 {
+  color: #E7E7E7;
+  background-color: #0087C2;
+}
 
+p#a1, #a2, #a3 {
+  color: white;
+}
 
+.para {
+  color: #E7E7E7;
+  background-color: #A24038;
+  border-radius: 12px;
+  padding: 25px;
+  width: 50%;
+}
 
 
 

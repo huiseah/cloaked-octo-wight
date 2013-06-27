@@ -1,14 +1,23 @@
 require 'pry'
 require 'sinatra'
 require 'sinatra/reloader' if development?
-require 'JSON'
-require 'HTTParty'
+require 'json'
+require 'httparty'
 
 get '/' do
   erb :home
 end
+
+get '/faq' do
+  erb :faq
+end
+
+get '/about' do
+  erb :about
+end
+
 post '/results' do
-@moviename = params[:moviename]
+@moviename = params[:moviename].gsub(' ','+')
 @filminfo = JSON(HTTParty.get("http://www.omdbapi.com/?i=&t=#{@moviename}"))
 
 @title= (@filminfo['Title'])
@@ -28,7 +37,7 @@ end
 
 
 
-# receives 
+# receives
 
 # get '/about' do
 #   erb: about
